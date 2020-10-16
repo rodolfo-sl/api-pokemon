@@ -1,0 +1,16 @@
+<div class="details">
+  <div class="pokemon-details">
+    <div>
+      <h1>{{ infoPokemon.name }}</h1><br>
+      <img src="{{ infoPokemon.imageUrlHiRes }}" class="card-details-pokemon" alt="..."><br>
+    </div>
+
+    <div class="details-content">
+      <span>ID: #{{ infoPokemon.id }}</span><br>
+      Ataque:<span *ngFor="let ataque of infoPokemon.attacks"> {{ ataque.name }} </span><br>
+      Fraqueza:<span *ngFor="let fraqueza of infoPokemon.weaknesses"> {{ fraqueza.type }}
+        {{ fraqueza.value }}</span><br>
+      Tipo:<span *ngFor="let tipo of infoPokemon.types"> {{ tipo }} </span>
+    </div>
+  </div>
+</div>

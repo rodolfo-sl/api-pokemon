@@ -1,0 +1,16 @@
+<div class="content">
+  <div class="row row-cols-1 row-cols-md-4">
+    <div class="card-deck col mb-4" *ngFor="let card of cardsPokemon">
+      <a (click)="navigateToDetails(card.id)">
+        <div class="card">
+          <img src="{{ card.imageUrl }}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{ card.name }}</h5>
+            <p class="card-text"># {{ card.id }}</p>
+            <p class="card-text">type</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
