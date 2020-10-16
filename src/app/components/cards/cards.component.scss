@@ -1,11 +1,11 @@
 .content{
-  cursor: pointer;
   a:visited {
     color: inherit;
   }
 
   a:hover {
     text-decoration: none;
+    cursor: pointer;
   }
 
 }
